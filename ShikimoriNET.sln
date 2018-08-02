@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShikimoriNET", "ShikimoriNET\ShikimoriNET.csproj", "{796638B4-B032-4203-9009-0959ACC8AA2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShikimoriNET.Tests", "ShikimoriNET.Tests\ShikimoriNET.Tests.csproj", "{B06D74FC-977C-4040-AFFB-511B8504D9A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796638B4-B032-4203-9009-0959ACC8AA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796638B4-B032-4203-9009-0959ACC8AA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796638B4-B032-4203-9009-0959ACC8AA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796638B4-B032-4203-9009-0959ACC8AA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06D74FC-977C-4040-AFFB-511B8504D9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06D74FC-977C-4040-AFFB-511B8504D9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06D74FC-977C-4040-AFFB-511B8504D9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06D74FC-977C-4040-AFFB-511B8504D9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2B7694E-EF75-4701-B755-1B7EF31B5834}
+	EndGlobalSection
+EndGlobal
