@@ -7,7 +7,7 @@ namespace ShikimoriNET
     {
         public readonly IAchievementsCategory Achievement = new AchievementsCategory();
         public readonly IAnimeCategory Anime = new AnimeCategory();
-        public readonly IAppearCategory Appear = new AppearCategory();
+        public readonly IAppearCategory Appears = new AppearCategory();
         public readonly IAuthorizeCategory Authorization = new AuthorizeCategory();
         public readonly IBanCategory Bans = new BanCategory();
         public readonly ICalendarCategory Calendar = new CalendarCategory();

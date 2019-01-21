@@ -1,20 +1,12 @@
-﻿using System.ComponentModel;
-using ShikimoriNET.Attributes;
+﻿using ShikimoriNET.Attributes;
 
 namespace ShikimoriNET.Enums.AnimeVideo
 {
-    public enum Kind //TODO: Change description
+    public enum Kind
     {
-        [Description("Манга")] [ParamValue("raw")]
-        Raw,
-
-        [Description("Манхва")] [ParamValue("subtitles")]
-        Subtitles,
-
-        [Description("OVA")] [ParamValue("fandub")]
-        Fundub,
-
-        [Description("ONA")] [ParamValue("unknown")]
-        Unknown
+        [ParamValue("raw")] Raw,
+        [ParamValue("subtitles")] Subtitles,
+        [ParamValue("fandub")] Fundub,
+        [ParamValue("unknown")] Unknown
     }
 }

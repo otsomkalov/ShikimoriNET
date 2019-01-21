@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using RestSharp;
 using ShikimoriNET.Categories.Interfaces;
-using ShikimoriNET.Params;
 using ShikimoriNET.Params.Authorization;
 
 namespace ShikimoriNET.Categories

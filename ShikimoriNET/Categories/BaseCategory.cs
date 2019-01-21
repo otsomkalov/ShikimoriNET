@@ -20,6 +20,7 @@ namespace ShikimoriNET.Categories
         {
             var request = parameters.GetRequest();
             var response = await Client.ExecuteTaskAsync(request);
+
             switch (response.StatusCode)
             {
                 case HttpStatusCode.Unauthorized:
@@ -30,14 +31,18 @@ namespace ShikimoriNET.Categories
         protected async Task<T> MakeRequestAsync<T>()
         {
             var request = new RestRequest();
+
             var response = await Client.ExecuteTaskAsync<T>(request);
+
             return response.Data;
         }
 
         protected async Task<T> MakeRequestAsync<T>(IParams parameters)
         {
             var request = parameters.GetRequest();
+
             var response = await Client.ExecuteTaskAsync<T>(request);
+
             return response.Data;
         }
     }

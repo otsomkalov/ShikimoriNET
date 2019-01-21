@@ -12,7 +12,7 @@ namespace ShikimoriNET.Params.Comment
         public IRestRequest GetRequest()
         {
             return new RestRequest(Method.POST)
-                .AddBody(this);
+                .AddJsonBody(this);
         }
     }
 }

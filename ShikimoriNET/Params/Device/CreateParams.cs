@@ -9,7 +9,7 @@ namespace ShikimoriNET.Params.Device
 
         public virtual IRestRequest GetRequest()
         {
-            return new RestRequest(Method.POST).AddBody(Device);
+            return new RestRequest(Method.POST).AddJsonBody(Device);
         }
     }
 }

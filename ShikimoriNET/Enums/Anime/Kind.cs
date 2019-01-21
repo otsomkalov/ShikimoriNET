@@ -22,8 +22,14 @@ namespace ShikimoriNET.Enums.Anime
 
         [Description("Клип")] [ParamValue("music")]
         Music,
-        [ParamValue("tv_13")] Tv13,
-        [ParamValue("tv_24")] Tv24,
-        [ParamValue("tv_48")] Tv48
+
+        [Description("~13 эпизодов")] [ParamValue("tv_13")]
+        Tv13,
+
+        [Description("~24 эпизода")] [ParamValue("tv_24")]
+        Tv24,
+
+        [Description(">30 эпизодов")] [ParamValue("tv_48")]
+        Tv48
     }
 }

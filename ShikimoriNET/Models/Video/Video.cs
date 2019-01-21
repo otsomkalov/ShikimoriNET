@@ -4,7 +4,7 @@ using ShikimoriNET.Models.Shared;
 
 namespace ShikimoriNET.Models.Video
 {
-    public class Video:BaseEntity
+    public class Video : BaseEntity
     {
         public Uri Url { get; set; }
         public Uri ImageUrl { get; set; }

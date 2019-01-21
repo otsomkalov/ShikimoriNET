@@ -1,26 +1,14 @@
-﻿using System.ComponentModel;
-using ShikimoriNET.Attributes;
+﻿using ShikimoriNET.Attributes;
 
 namespace ShikimoriNET.Enums.Manga
 {
-    public enum Kind //TODO: Change description
+    public enum Kind
     {
-        [Description("Манга")] [ParamValue("manga")]
-        Manga,
-
-        [Description("Манхва")] [ParamValue("manhwa")]
-        Manhwa,
-
-        [Description("OVA")] [ParamValue("manhua")]
-        Manhua,
-
-        [Description("ONA")] [ParamValue("novel")]
-        Novel,
-
-        [Description("Спешл")] [ParamValue("one_shot")]
-        OneShot,
-
-        [Description("Клип")] [ParamValue("doujin")]
-        Doujin
+        [ParamValue("manga")] Manga,
+        [ParamValue("manhwa")] Manhwa,
+        [ParamValue("manhua")] Manhua,
+        [ParamValue("novel")] Novel,
+        [ParamValue("one_shot")] OneShot,
+        [ParamValue("doujin")] Doujin
     }
 }

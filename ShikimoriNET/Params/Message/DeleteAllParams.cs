@@ -10,7 +10,7 @@ namespace ShikimoriNET.Params.Message
 
         public IRestRequest GetRequest()
         {
-            return new RestRequest("delete_all", Method.POST).AddBody(this);
+            return new RestRequest("delete_all", Method.POST).AddJsonBody(this);
         }
     }
 }

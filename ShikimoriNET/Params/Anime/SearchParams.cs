@@ -34,7 +34,8 @@ namespace ShikimoriNET.Params.Anime
             if (Status.HasValue) request.AddQueryParameter("status", AttributeHelpers.GetParamAttributeData(Status));
             if (!string.IsNullOrEmpty(Season)) request.AddQueryParameter("season", Season);
             if (Score.HasValue) request.AddQueryParameter("score", Score.Value.ToString());
-            if (Duration.HasValue) request.AddQueryParameter("duration", AttributeHelpers.GetParamAttributeData(Duration));
+            if (Duration.HasValue)
+                request.AddQueryParameter("duration", AttributeHelpers.GetParamAttributeData(Duration));
             if (Rating.HasValue) request.AddQueryParameter("rating", AttributeHelpers.GetParamAttributeData(Rating));
             if (Genre != null) request.AddQueryParameter("genre", string.Join(",", Genre));
             if (Studio != null) request.AddQueryParameter("studio", string.Join(",", Studio));

@@ -1,20 +1,12 @@
-﻿using System.ComponentModel;
-using ShikimoriNET.Attributes;
+﻿using ShikimoriNET.Attributes;
 
 namespace ShikimoriNET.Enums.AnimeVideo
 {
-    public enum Language //TODO: Change description
+    public enum Language
     {
-        [Description("Манга")] [ParamValue("russian")]
-        Russian,
-
-        [Description("Манхва")] [ParamValue("english")]
-        English,
-
-        [Description("OVA")] [ParamValue("original")]
-        Original,
-
-        [Description("ONA")] [ParamValue("unknown")]
-        Unknown
+        [ParamValue("russian")] Russian,
+        [ParamValue("english")] English,
+        [ParamValue("original")] Original,
+        [ParamValue("unknown")] Unknown
     }
 }

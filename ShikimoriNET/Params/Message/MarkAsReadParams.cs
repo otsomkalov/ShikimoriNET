@@ -9,7 +9,7 @@ namespace ShikimoriNET.Params.Message
 
         public IRestRequest GetRequest()
         {
-            return new RestRequest("mark_read", Method.POST).AddBody(Ids);
+            return new RestRequest("mark_read", Method.POST).AddJsonBody(Ids);
         }
     }
 }

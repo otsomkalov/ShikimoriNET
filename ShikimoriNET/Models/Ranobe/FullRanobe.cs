@@ -3,7 +3,7 @@ using ShikimoriNET.Models.Shared;
 
 namespace ShikimoriNET.Models.Ranobe
 {
-    public class Ranobe : BookTitle
+    public class FullRanobe : FullBookTitle
     {
         public Kind Kind { get; set; }
     }

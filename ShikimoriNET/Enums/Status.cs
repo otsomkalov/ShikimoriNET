@@ -1,13 +1,17 @@
-﻿using ShikimoriNET.Attributes;
+﻿using System.ComponentModel;
+using ShikimoriNET.Attributes;
 
 namespace ShikimoriNET.Enums
 {
     public enum Status
     {
-        [ParamValue("anons")] Anons,
+        [Description("Анонсировано")] [ParamValue("anons")]
+        Anons,
 
-        [ParamValue("ongoing")] Ongoing,
+        [Description("Онгоинг")] [ParamValue("ongoing")]
+        Ongoing,
 
-        [ParamValue("released")] Released
+        [Description("Выпущено")] [ParamValue("released")]
+        Released
     }
 }

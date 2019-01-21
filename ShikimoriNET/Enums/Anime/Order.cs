@@ -1,15 +1,25 @@
-﻿using ShikimoriNET.Attributes;
+﻿using System.ComponentModel;
+using ShikimoriNET.Attributes;
 
 namespace ShikimoriNET.Enums.Anime
 {
     public enum Order
     {
-        [ParamValue("id")] Id,
-        [ParamValue("ranked")] Ranked,
+        [Description("По ID")] [ParamValue("id")]
+        Id,
+
+        [Description("Нет возрастных ограничений")] [ParamValue("ranked")]
+        Ranked,
         [ParamValue("kind")] Kind,
-        [ParamValue("popularity")] Popularity,
-        [ParamValue("name")] Name,
-        [ParamValue("aired_on")] AiredOn,
+
+        [Description("По популярности")] [ParamValue("popularity")]
+        Popularity,
+
+        [Description("По алфавиту")] [ParamValue("name")]
+        Name,
+
+        [Description("По дате выхода")] [ParamValue("aired_on")]
+        AiredOn,
         [ParamValue("episodes")] Episodes,
         [ParamValue("status")] Status,
         [ParamValue("random")] Random

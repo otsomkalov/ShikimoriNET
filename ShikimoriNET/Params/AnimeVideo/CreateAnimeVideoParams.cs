@@ -1,24 +1,15 @@
-﻿using System;
-using RestSharp;
-using ShikimoriNET.Enums.AnimeVideo;
+﻿using RestSharp;
 
 namespace ShikimoriNET.Params.AnimeVideo
 {
     public class CreateAnimeVideoParams : IParams
     {
-        public int AnimeId { get; set; }
-        public string AuthorName { get; set; }
-        public int Episode { get; set; }
-        public Kind? Kind { get; set; }
-        public Language? Language { get; set; }
-        public Quality? Quality { get; set; }
-        public Uri Source { get; set; }
-        public Uri Url { get; set; }
+        public AnimeVideo AnimeVideo { get; set; }
 
         public virtual IRestRequest GetRequest()
         {
             return new RestRequest("{anime_id}/anime_videos", Method.POST)
-                .AddUrlSegment("anime_id", AnimeId)
+                .AddUrlSegment("anime_id", AnimeVideo.AnimeId)
                 .AddBody(this);
         }
     }

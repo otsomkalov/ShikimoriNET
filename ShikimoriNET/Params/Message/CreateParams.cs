@@ -10,7 +10,7 @@ namespace ShikimoriNET.Params.Message
 
         public IRestRequest GetRequest()
         {
-            return new RestRequest(Method.POST).AddBody(this);
+            return new RestRequest(Method.POST).AddJsonBody(this);
         }
     }
 }

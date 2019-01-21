@@ -9,7 +9,7 @@ namespace ShikimoriNET.Params.Appear
 
         public virtual IRestRequest GetRequest()
         {
-            return new RestRequest("appear", Method.POST).AddBody(string.Join(",", Ids));
+            return new RestRequest("appear", Method.POST).AddJsonBody(string.Join(",", Ids));
         }
     }
 }

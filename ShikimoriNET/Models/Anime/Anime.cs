@@ -1,5 +1,5 @@
-﻿using ShikimoriNET.Enums;
-using ShikimoriNET.Enums.Anime;
+﻿using ShikimoriNET.Enums.Anime;
+using ShikimoriNET.Models.Shared;
 
 namespace ShikimoriNET.Models.Anime
 {

@@ -1,23 +1,13 @@
-﻿using System.ComponentModel;
-using ShikimoriNET.Attributes;
+﻿using ShikimoriNET.Attributes;
 
 namespace ShikimoriNET.Enums.AnimeVideo
 {
-    public enum Quality //TODO: Change description
+    public enum Quality
     {
-        [Description("Манга")] [ParamValue("bd")]
-        BD,
-
-        [Description("Манхва")] [ParamValue("web")]
-        Web,
-
-        [Description("OVA")] [ParamValue("tv")]
-        TV,
-
-        [Description("OVA")] [ParamValue("dvd")]
-        DVD,
-
-        [Description("ONA")] [ParamValue("unknown")]
-        Unknown
+        [ParamValue("bd")] BD,
+        [ParamValue("web")] Web,
+        [ParamValue("tv")] TV,
+        [ParamValue("dvd")] DVD,
+        [ParamValue("unknown")] Unknown
     }
 }

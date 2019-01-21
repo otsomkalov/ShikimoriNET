@@ -1,12 +1,10 @@
-﻿using ShikimoriNET.Enums;
-using ShikimoriNET.Enums.Manga;
+﻿using ShikimoriNET.Enums.Manga;
+using ShikimoriNET.Models.Shared;
 
 namespace ShikimoriNET.Models.Manga
 {
-    public class Manga : Title
+    public class Manga : BookTitle
     {
-        public Kind? Kind { get; set; }
-        public int Volumes { get; set; }
-        public int Chapters { get; set; }
+        public Kind Kind { get; set; }
     }
 }
